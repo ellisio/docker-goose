@@ -14,5 +14,5 @@ RUN go get -u github.com/pressly/goose/cmd/goose
 RUN wget https://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb \
     && sudo dpkg -i erlang-solutions_1.0_all.deb \
     && sudo apt update \
-    && sudo apt install -y esl-erlang elixir \
+    && sudo apt install -y esl-erlang elixir=1.10.1-1 \
     && sudo rm -rf /var/lib/apt/lists/*
